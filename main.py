@@ -69,7 +69,7 @@ def print_SudokuBoard(currentlyboard):
     middleOfSquare = "║" + middleOfSquare
 
     print(topOfSquare)
-    # Creating board
+    # Creating boafrd
     for i in range(len(currentlyboard)):
         print("║", end="")
         for j in range(len(currentlyboard[i])):
@@ -100,6 +100,7 @@ while __name__ == '__main__':
     """)
     gridNr = input("Solve grid number:")
     if gridNr == "1":
+        __name__ = "valid"
         board = [
             [0, 0, 0, 0, 6, 0, 0, 0, 0],
             [1, 0, 0, 0, 0, 4, 9, 0, 2],
@@ -111,8 +112,8 @@ while __name__ == '__main__':
             [0, 0, 0, 1, 9, 0, 6, 0, 0],
             [6, 0, 7, 4, 0, 0, 5, 8, 9]
         ]
+    elif gridNr == "2":
         __name__ = "valid"
-    if gridNr == "2":
         board = [
             [2, 0, 0, 0, 0, 6, 3, 4, 0],
             [3, 0, 7, 0, 0, 0, 6, 2, 5],
@@ -124,8 +125,8 @@ while __name__ == '__main__':
             [7, 8, 5, 0, 0, 2, 0, 0, 0],
             [4, 0, 1, 9, 0, 0, 0, 0, 0]
         ]
+    elif gridNr == "3":
         __name__ = "valid"
-    if gridNr == "3":
         board = [
             [0, 3, 0, 0, 6, 2, 4, 0, 0],
             [0, 9, 0, 8, 5, 0, 0, 2, 6],
@@ -137,8 +138,8 @@ while __name__ == '__main__':
             [4, 0, 8, 0, 0, 7, 5, 9, 2],
             [0, 0, 0, 5, 0, 8, 3, 6, 0]
         ]
+    elif gridNr == "4":
         __name__ = "valid"
-    if gridNr == "4":
         board = [
             [0, 8, 0, 4, 0, 0, 1, 2, 0],
             [0, 0, 0, 0, 7, 5, 0, 0, 9],
@@ -150,7 +151,6 @@ while __name__ == '__main__':
             [1, 2, 0, 0, 0, 7, 4, 0, 0],
             [0, 4, 9, 2, 0, 6, 0, 0, 7]
         ]
-        __name__ = "valid"
     else:
         print("\nSorry I do not understand\n")
         __name__ = "__main__"
